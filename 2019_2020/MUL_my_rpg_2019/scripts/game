@@ -1,0 +1,400 @@
+B ressources/menufond.jpg 0 0 1
+B ressources/1.png 40 320 2
+B ressources/2.png 40 620 3
+B ressources/3.png 40 470 4
+B ressources/4.png 40 770 5
+B ressources/5.png 40 100 6
+B ressources/a.png 8 280 7
+B ressources/b.png 10 425 8
+B ressources/c.png 5 577 9
+B ressources/d.png 4 735 10
+B ressources/menuset.jpg 0 0 11
+B ressources/c.png -500 -500 12
+B ressources/invmodif.png 600 270 13
+B ressources/i1.png 343 235 14
+B ressources/i4.png 340 370 15
+B ressources/i2.png 340 500 16
+B ressources/i3.png 340 635 17
+B ressources/i5.png 200 500 18
+B ressources/i6.png 480 500 19
+B ressources/i8.png 340 775 20
+B ressources/i7.png 343 235 21
+B ressources/i7.png 340 370 22
+B ressources/i7.png 340 500 23
+B ressources/i7.png 200 500 24
+B ressources/i7.png 480 500 25
+B ressources/i7.png 340 635 26
+B ressources/i7.png 340 775 27
+B ressources/c.png -500 -500 28
+B ressources/c.png -500 -500 29
+I item/a1.png 681 525 30 1 14 17 105
+I item/a2.png 685 718 31 2 70 134 86
+I item/a3.png 689 340 32 3 10 14 25
+I item/a4.png 688 622 33 4 35 56 43
+I item/a5.png 680 428 34 5 22 19 37
+I item/b3.png 785 343 35 6 21 16 13
+I item/b1.png 778 438 36 7 39 20 25
+I item/b2.png 782 526 37 8 33 76 48
+I item/b5.png 782 624 38 9 55 68 64
+I item/b4.png 780 717 39 10 114 92 99
+I item/c3.png 878 340 40 11 17 20 11
+I item/c5.png 877 438 41 12 25 26 32
+I item/c2.png 878 533 42 13 24 17 68
+I item/c4.png 880 622 43 14 70 61 65
+I item/c1.png 880 723 44 15 94 116 89
+I item/p3.png 974 338 45 16 19 12 15
+I item/p4.png 972 432 46 17 21 34 26
+I item/p2.png 975 528 47 18 47 36 30
+I item/p5.png 972 620 48 19 59 102 77
+I item/p1.png 973 715 49 20 65 155 98
+I item/d1.png 1070 342 50 21 13 10 18
+I item/d3.png 1065 436 51 22 25 28 31
+I item/d5.png 1068 528 52 23 45 42 46
+I item/d4.png 1069 625 53 24 60 60 74
+I item/d2.png 1066 716 54 25 105 99 91
+I item/e1.png 1165 330 55 26 23 18 14
+I item/e3.png 1165 440 56 27 17 15 21
+I item/e9.png 1157 528 57 28 31 26 24
+I item/e10.png 1149 631 58 29 27 24 33
+I item/e8.png 1155 728 59 30 49 42 42
+I item/e2.png 1256 335 60 31 55 40 47
+I item/e4.png 1267 446 61 32 54 50 69
+I item/e6.png 1245 530 62 33 62 53 58
+I item/e5.png 1248 631 63 34 84 82 106
+I item/e7.png 1239 725 64 35 115 80 75
+I item/o2.png 1350 341 65 36 0 0 0
+I item/o1.png 1362 436 66 37 248 197 237
+I item/o4.png 1360 526 67 38 120 331 154
+I item/o3.png 1364 628 68 39 360 191 122
+I item/o5.png 1363 724 69 40 152 170 414
+I ressources/c.png -500 -500 70 2 0 0 0
+B ressources/pause2.png 450 100 71
+B ressources/p1.png 975 355 72
+B ressources/p2.png 784 354 73
+B ressources/p3.png 597 350 74
+B ressources/p4.png 1170 356 75
+B ressources/c.png -500 -500 76
+B ressources/v1.png -10 840 77
+B ressources/v2.png -10 840 78
+B ressources/v3.png -10 840 79
+B ressources/v4.png -10 840 80
+B ressources/v5.png -10 840 81
+B ressources/v6.png -10 840 82
+B ressources/v7.png -10 840 83
+B ressources/v8.png -10 840 84
+B ressources/xp1.png 400 840 85
+B ressources/xp2.png 400 840 86
+B ressources/xp3.png 400 840 87
+B ressources/xp4.png 400 840 88
+B ressources/xp5.png 400 840 89
+B ressources/xp6.png 400 840 90
+B ressources/xp7.png 400 840 91
+B ressources/xp8.png 400 840 92
+B ressources/c.png -500 -500 93
+M ressources/map4.png 0 0 95 4
+M ressources/map5.png 0 0 96 5
+M ressources/map6.png 0 0 97 6
+M ressources/map7.png 0 0 98 7
+M ressources/map8.png 0 0 99 8
+M ressources/map9.png 0 0 100 9
+M ressources/map1.png 0 0 101 1
+M ressources/map2.png 0 0 102 2
+M ressources/map3.png 0 0 103 3
+M ressources/map10.png 0 0 104 10
+M ressources/c.png -500 -500 105 11
+B ressources/menustatus.png -100 220 97
+B ressources/+.png 290 395 98
+B ressources/+.png 290 468 99
+B ressources/+.png 290 545 100
+B ressources/+.png 290 621 101
+B ressources/+2.png 290 395 102
+B ressources/+2.png 290 468 103
+B ressources/+2.png 290 545 104
+B ressources/+2.png 290 621 105
+B ressources/nuit.png 0 0 106
+B ressources/inv.png 805 160 107
+B ressources/close.png 1260 790 108
+B ressources/pick.png 512 350 109
+B ressources/pick.png 514 460 110
+B ressources/pick.png 517 572 111
+B ressources/pick.png 520 695 112
+B ressources/apply.png 353 794 113
+B ressources/1_1-min.png -700 -250 114
+B ressources/2_1-min.png -700 -250 115
+B ressources/3_1-min.png -700 -250 116
+B ressources/4_1-min.png -700 -250 117
+B ressources/5_1-min.png -700 -250 118
+B ressources/6_1-min.png -700 -250 119
+B ressources/7_1-min.png -700 -250 120
+B ressources/8_1-min.png -700 -250 121
+B ressources/9_1-min.png -700 -250 122
+B ressources/2_3-min.png -700 -250 123
+B ressources/4_3-min.png -700 -250 124
+B ressources/6_3-min.png -700 -250 125
+B ressources/cursor.png 0 0 126
+B ressources/clock.png 1680 32 127
+B ressources/cinematic.png 0 0 128
+B ressources/pass.png 1700 930 129
+B ressources/pass2.png 1700 919 130
+B ressources/point.png 0 0 131
+B ressources/credits.png 0 0 132
+B ressources/c.png -500 -500 133
+N item/ia1.png 510 60 1
+N item/ia2.png 510 60 2
+N item/ia3.png 510 60 3
+N item/ia4.png 510 60 4
+N item/ia5.png 510 60 5
+N item/ib3.png 510 60 6
+N item/ib1.png 510 60 7
+N item/ib2.png 510 60 8
+N item/ib5.png 510 60 9
+N item/ib4.png 510 60 10
+N item/ic3.png 510 60 11
+N item/ic5.png 510 60 12
+N item/ic2.png 510 60 13
+N item/ic4.png 510 60 14
+N item/ic1.png 510 60 15
+N item/ip3.png 510 60 16
+N item/ip4.png 510 60 17
+N item/ip2.png 510 60 18
+N item/ip5.png 510 60 19
+N item/ip1.png 510 60 20
+N item/id1.png 510 60 21
+N item/id3.png 510 60 22
+N item/id5.png 510 60 23
+N item/id4.png 510 60 24
+N item/id2.png 510 60 25
+N item/ie1.png 510 60 26
+N item/ie9.png 510 60 27
+N item/ie8.png 510 60 28
+N item/ie4.png 510 60 29
+N item/ie5.png 510 60 30
+N item/ie3.png 510 60 31
+N item/ie10.png 510 60 32
+N item/ie2.png 510 60 33
+N item/ie6.png 510 60 34
+N item/ie7.png 510 60 35
+N item/io2.png 510 60 36
+N item/io1.png 510 60 37
+N item/io4.png 510 60 38
+N item/io3.png 510 60 39
+N item/io5.png 510 60 40
+N ressources/c.png -500 -500 41
+O 55 228 -25 95 4 1
+O 492 663 -55 95 4 2
+O 633 779 7 121 4 3
+O 449 603 203 258 4 4
+O 976 1421 -55 83 4 5
+O 1435 1590 -55 55 4 6
+O 1605 1740 -55 30 4 7
+O 1084 1260 200 304 4 8
+O 1680 1844 86 248 4 9
+O -45 64 245 490 4 10
+O 65 374 199 490 4 11
+O 332 451 229 490 4 12
+O 410 718 241 485 4 13
+O 674 829 265 490 4 14
+O 787 1095 248 491 4 15
+O 1323 1464 229 348 4 16
+O 1660 1754 348 446 4 17
+O 1207 1382 605 750 4 18
+O 1813 1920 621 767 4 19
+O 1604 1814 725 964 4 20
+O 1530 1630 766 870 4 21
+O 1440 1508 835 936 4 22
+O 755 1068 675 920 4 23
+O 415 727 679 928 4 24
+O 43 352 679 928 4 25
+O 243 331 922 1016 4 26
+O 540 672 942 1018 4 27
+O 313 420 817 925 4 28
+O -45 60 -55 130 5 29
+O 15 97 100 199 5 30
+O 93 540 143 395 5 31
+O 493 662 -55 105 5 32
+O 383 509 331 435 5 33
+O 315 486 410 545 5 34
+O 590 902 107 353 5 35
+O 578 661 295 387 5 36
+O 499 734 363 454 5 37
+O 818 911 283 387 5 38
+O 607 786 426 569 5 39
+O 782 884 446 550 5 40
+O 21 331 675 899 5 41
+O 310 453 670 782 5 42
+O 431 667 687 780 5 43
+O 434 883 735 980 5 44
+O 1045 1142 16 120 5 45
+O 1017 1198 480 610 5 46
+O 1090 1278 863 996 5 47
+O 1233 1483 564 705 5 48
+O 1462 1625 613 718 5 49
+O 1487 1633 688 797 5 50
+O 1571 1670 735 837 5 51
+O 1092 1271 865 994 5 52
+O 1517 1755 330 425 5 53
+O 1341 1706 92 333 5 54
+O 1610 1703 279 375 5 55
+O 1341 1506 -41 135 5 56
+O 1677 1849 84 270 5 57
+O 1602 1758 -55 47 5 58
+O -45 177 111 472 7 59
+O 168 481 -55 201 7 60
+O 135 282 132 241 7 61
+O 474 558 89 188 7 62
+O 376 462 258 355 7 63
+O 495 660 -55 68 7 64
+O 612 790 25 152 7 65
+O 695 875 -55 90 7 66
+O 765 865 102 204 7 67
+O 338 509 480 610 7 68
+O 662 807 695 803 7 69
+O -45 141 792 1018 7 70
+O 804 980 447 590 7 71
+O 1182 1493 76 323 7 72
+O 1637 1815 -55 69 7 73
+O 1720 1878 83 250 7 74
+O 1468 1565 274 293 7 75
+O 1710 1795 237 331 7 76
+O 1171 1346 267 443 7 77
+O 1040 1201 214 642 7 78
+O 1052 1500 396 637 7 79
+O 1092 1315 587 698 7 80
+O 1421 1566 589 684 7 81
+O 1279 1589 638 929 7 82
+O 1097 1325 711 807 7 83
+O 1064 1304 823 982 7 84
+O -45 922 15 304 8 85
+O 355 595 398 556 8 86
+O 880 1455 -55 118 8 87
+O 1197 1373 228 386 8 88
+O 1757 1919 7 179 8 89
+O 1710 1793 238 332 8 90
+O -45 658 704 1018 8 91
+O 696 937 645 806 8 92
+O 604 924 823 980 8 93
+O 979 1085 638 1018 8 94
+O 1048 1200 570 1018 8 95
+O 1152 1493 637 1018 8 96
+O 1355 1455 573 677 8 97
+O 164 331 133 306 9 98
+O 345 481 189 297 9 99
+O 570 657 254 351 9 100
+O 1025 1204 285 412 9 101
+O 1098 1254 -4 164 9 102
+O 1284 1410 92 191 9 103
+O 567 1228 658 894 9 104
+O 655 748 596 676 9 105
+O 808 906 543 678 9 106
+O 996 1225 626 715 9 107
+O 1189 1311 661 757 9 108
+O 1177 1313 707 856 9 109
+O 797 1072 901 1018 9 110
+O 580 831 839 955 9 111
+O 561 666 648 853 9 112
+O 1853 1918 929 1018 9 113
+O 1150 1236 166 260 1 114
+O 297 882 551 780 1 115
+O 297 530 100 601 1 116
+O -45 1919 -55 172 1 117
+O 121 253 121 203 1 118
+O 246 341 121 217 1 119
+O 521 734 240 441 1 120
+O 970 1090 338 481 1 121
+O 771 950 252 358 1 122
+O 770 1012 203 305 1 123
+O 984 1151 119 276 1 124
+O 525 686 110 235 1 125
+O 1002 1519 543 783 1 126
+O 1285 1518 97 593 1 127
+O 1009 1429 943 1018 1 128
+O -45 1208 -55 171 2 129
+O 256 430 214 360 2 130
+O 616 887 134 318 2 131
+O 897 1026 119 221 2 132
+O 1015 1165 154 261 2 133
+O 1130 1312 170 330 2 134
+O 1273 1581 63 301 2 135
+O 1543 1658 200 339 2 136
+O 1662 1747 348 442 2 137
+O 1628 1789 81 246 2 138
+O 1221 1382 -55 61 2 139
+O -45 38 944 1018 2 140
+O 336 421 821 916 3 141
+O 411 580 793 518 3 142
+O 539 692 331 517 3 143
+O 837 1080 461 559 3 144
+O 469 551 206 302 3 145
+O 567 809 204 302 3 146
+O 669 821 46 241 3 147
+O 751 825 270 338 3 148
+O 805 1111 74 317 3 149
+O 1103 1179 260 331 3 150
+O 1068 1294 186 284 3 151
+O 1069 1216 143 233 3 152
+O 1228 1312 154 241 3 153
+O 1386 1528 163 357 3 154
+O 1726 1808 561 647 3 155
+O 1585 1859 -1 160 3 156
+O 1836 1919 -55 28 3 157
+O 259 403 792 894 6 158
+O 40 347 408 653 6 159
+O 512 688 277 430 6 160
+O 90 246 169 310 6 161
+O 60 506 16 261 6 162
+O 345 485 200 298 6 163
+O 553 637 118 212 6 164
+O 502 653 -55 90 6 165
+O 634 807 -2 118 6 166
+O 937 1245 102 342 6 167
+O 1227 1312 144 238 6 168
+O 1289 1692 104 340 6 169
+O 1236 1473 323 421 6 170
+O 1288 1382 286 378 6 171
+O 999 1135 431 595 6 172
+O 1094 1273 487 632 6 173
+O 957 1398 590 829 6 174
+O 1659 1836 655 785 6 175
+O 85 330 -55 38 6 176
+O -45 108 -55 33 6 177
+O 445 900 217 312 10 178
+O 424 488 255 799 10 179
+O 427 912 740 813 10 180
+O 856 911 554 820 10 181
+O 810 911 242 490 10 182
+O 863 1019 448 506 10 183
+O 861 1454 546 606 10 184
+O 964 1022 246 495 10 185
+O 970 1452 212 300 10 186
+O 1396 1455 231 604 10 187
+O 0 34 22 44 10 188
+E ressources/mob2.png 1100 290 1 1 2
+E ressources/mob2.png 100 400 2 1 2
+E ressources/mob4.png 1600 300 3 2 4
+E ressources/mob4.png 1400 400 4 2 4
+E ressources/mob4.png 340 150 5 3 4
+E ressources/mob4.png 1500 800 6 3 4
+E ressources/mob4.png 1000 480 7 4 4
+E ressources/mob3.png 1650 100 8 4 3
+E ressources/mob4.png 1500 380 9 5 4
+E ressources/mob3.png 300 70 10 5 3
+E ressources/mob1.png 700 110 11 6 1
+E ressources/mob1.png 1100 270 12 6 1
+E ressources/mob1.png 400 250 13 9 1
+E ressources/mob5.png 1600 600 14 9 5
+E ressources/mob1.png 250 250 15 8 1
+E ressources/mob5.png 1250 400 16 8 5
+E ressources/mob1.png 1640 750 17 7 1
+E ressources/mob5.png 630 400 18 7 5
+E ressources/boss.png 1150 210 19 10 6
+E ressources/c.png -500 -500 20 1 1
+P ressources/pnj4.png 1015 440 1 1
+P ressources/pnj1.png 890 310 2 3
+P ressources/pnj6.png 856 285 3 8
+P ressources/pnj3.png 980 626 4 9
+P ressources/pnj8.png 700 300 5 2
+P ressources/pnj2.png 600 430 6 6
+P ressources/pnj7.png 1100 620 7 5
+P ressources/pnj5.png 470 470 8 4
+P ressources/pnj9.png 1370 320 9 7
+P ressources/c.png -500 -500 10 1

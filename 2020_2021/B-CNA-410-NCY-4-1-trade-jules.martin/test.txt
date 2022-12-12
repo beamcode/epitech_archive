@@ -1,0 +1,10 @@
+settings player_names player0
+settings your_bot player0
+settings timebank 2000
+settings time_per_move 100
+settings candle_interval 1800
+settings candle_format pair,date,high,low,open,close,volume
+settings candles_total 720
+settings candles_given 336
+settings initial_stack 1000
+settings transaction_fee_percent 0.2

@@ -1,0 +1,4 @@
+resources/img/skin7.png
+resources/img/skin4.png
+resources/img/skin2.png
+resources/img/skin2.png

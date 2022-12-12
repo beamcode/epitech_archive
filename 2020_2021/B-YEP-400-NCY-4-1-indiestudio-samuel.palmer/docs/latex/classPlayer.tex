@@ -1,0 +1,137 @@
+\hypertarget{classPlayer}{}\doxysection{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classPlayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayer_ab3943dafc286807029c0051b33c7b9af}\label{classPlayer_ab3943dafc286807029c0051b33c7b9af}} 
+{\bfseries Player} (const std\+::string \&obj, const std\+::string \&\mbox{\hyperlink{class__Model_ad46d2d90439d46e20a0c51ee68eee879}{texture}})
+\item 
+\mbox{\Hypertarget{classPlayer_a4c7e45f9c2e865955f6615083142e6e1}\label{classPlayer_a4c7e45f9c2e865955f6615083142e6e1}} 
+void {\bfseries move\+Player\+One} ()
+\item 
+\mbox{\Hypertarget{classPlayer_a7e1dcb3738b76b81128f753374841a6e}\label{classPlayer_a7e1dcb3738b76b81128f753374841a6e}} 
+void {\bfseries move\+Player\+Two} ()
+\item 
+\mbox{\Hypertarget{classPlayer_a8a5b8e40cb4bf51532539948796821d6}\label{classPlayer_a8a5b8e40cb4bf51532539948796821d6}} 
+bool {\bfseries can\+Place\+Bomb} ()
+\item 
+\mbox{\Hypertarget{classPlayer_a598122f6c4db517f3b600a269937d588}\label{classPlayer_a598122f6c4db517f3b600a269937d588}} 
+void {\bfseries has\+Placed\+Bomb} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ bomb)
+\item 
+\mbox{\Hypertarget{classPlayer_a002f450dbf5774b956944aa042604f75}\label{classPlayer_a002f450dbf5774b956944aa042604f75}} 
+float {\bfseries time\+To\+Bomb} ()
+\item 
+\mbox{\Hypertarget{classPlayer_aeaf6092f9cbefbe79a5f8132cc0d9271}\label{classPlayer_aeaf6092f9cbefbe79a5f8132cc0d9271}} 
+bool {\bfseries has\+Bomb} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ bomb)
+\item 
+\mbox{\Hypertarget{classPlayer_af83262c2e5bb4c6fa76d9012649b0b78}\label{classPlayer_af83262c2e5bb4c6fa76d9012649b0b78}} 
+void {\bfseries set\+Time\+Bomb} (float time)
+\item 
+\mbox{\Hypertarget{classPlayer_ada3a00289796ff55ec7b4f9dfd0bb0eb}\label{classPlayer_ada3a00289796ff55ec7b4f9dfd0bb0eb}} 
+bool {\bfseries check\+\_\+collision} (float pos\+\_\+x, float pos\+\_\+z)
+\item 
+\mbox{\Hypertarget{classPlayer_adf3e13b361390fd504a3ffc509dbac1f}\label{classPlayer_adf3e13b361390fd504a3ffc509dbac1f}} 
+bool {\bfseries has\+Killed\+Player} (Vector3 pos, int i)
+\item 
+\mbox{\Hypertarget{classPlayer_a9fd6280a9f120aac97a7d9f55cd15ae6}\label{classPlayer_a9fd6280a9f120aac97a7d9f55cd15ae6}} 
+void {\bfseries set\+Grid} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \+\_\+grid)
+\item 
+\mbox{\Hypertarget{classPlayer_ab9465c43bd1f121cf89adf8545929905}\label{classPlayer_ab9465c43bd1f121cf89adf8545929905}} 
+void {\bfseries set\+Score} (int \+\_\+score)
+\item 
+\mbox{\Hypertarget{classPlayer_a20665e4647baa8f898a62021e6204450}\label{classPlayer_a20665e4647baa8f898a62021e6204450}} 
+bool {\bfseries is\+Dead} () const
+\item 
+\mbox{\Hypertarget{classPlayer_a94e0d1c2458ff03ae66983c22e38d949}\label{classPlayer_a94e0d1c2458ff03ae66983c22e38d949}} 
+Vector3 {\bfseries get\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classPlayer_acbdb2bae8d732157af0ca5f5438a2b63}\label{classPlayer_acbdb2bae8d732157af0ca5f5438a2b63}} 
+int {\bfseries get\+Score} () const
+\item 
+\mbox{\Hypertarget{classPlayer_a5efe913d8dafca6dac14760798342bd4}\label{classPlayer_a5efe913d8dafca6dac14760798342bd4}} 
+virtual void {\bfseries move\+IA} ()
+\item 
+\mbox{\Hypertarget{classPlayer_a8f7ccdc7228416ad6a685659766905a8}\label{classPlayer_a8f7ccdc7228416ad6a685659766905a8}} 
+void {\bfseries play\+\_\+animation} (int i)
+\item 
+\mbox{\Hypertarget{classPlayer_a1ef2a7590d5d74dcb867a6165591f7bd}\label{classPlayer_a1ef2a7590d5d74dcb867a6165591f7bd}} 
+bool {\bfseries anim\+\_\+clock} ()
+\item 
+\mbox{\Hypertarget{classPlayer_aa5b0cb786efc9c0cb09071cec57a98e3}\label{classPlayer_aa5b0cb786efc9c0cb09071cec57a98e3}} 
+void {\bfseries apply\+Bonus} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBonus}{Bonus}} $>$ bonus)
+\item 
+\mbox{\Hypertarget{classPlayer_a2a950d4d3f9c25e9c6d3847620536ca5}\label{classPlayer_a2a950d4d3f9c25e9c6d3847620536ca5}} 
+void {\bfseries bonus\+Has\+End} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayer_a8c99969a91a998e64313e39084750ae4}\label{classPlayer_a8c99969a91a998e64313e39084750ae4}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class__Sound}{\+\_\+\+Sound}} $>$ {\bfseries sound}
+\item 
+\mbox{\Hypertarget{classPlayer_ae969e616ff0ff8fc61909ffe6487a2fc}\label{classPlayer_ae969e616ff0ff8fc61909ffe6487a2fc}} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries grid}
+\item 
+\mbox{\Hypertarget{classPlayer_ae5a21c6baa73a2c79e847ec57644c5ef}\label{classPlayer_ae5a21c6baa73a2c79e847ec57644c5ef}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ $>$ {\bfseries bomb\+List}
+\item 
+\mbox{\Hypertarget{classPlayer_afc3810ceef5d69b8ab8c8f9b8b87b09b}\label{classPlayer_afc3810ceef5d69b8ab8c8f9b8b87b09b}} 
+Vector3 {\bfseries p\+\_\+size}
+\item 
+\mbox{\Hypertarget{classPlayer_a5298c7e3886c9f8d71a5541fc9b0e502}\label{classPlayer_a5298c7e3886c9f8d71a5541fc9b0e502}} 
+float {\bfseries time}
+\item 
+\mbox{\Hypertarget{classPlayer_aea4b9e56a3dfd377a5d0bd4c3f2da67f}\label{classPlayer_aea4b9e56a3dfd377a5d0bd4c3f2da67f}} 
+float {\bfseries time2}
+\item 
+\mbox{\Hypertarget{classPlayer_a233dc34d7a135f7a7c2b7e21941b1c0c}\label{classPlayer_a233dc34d7a135f7a7c2b7e21941b1c0c}} 
+float {\bfseries time3}
+\item 
+\mbox{\Hypertarget{classPlayer_aaeaa8f3f930c4781e72567e39e392d2a}\label{classPlayer_aaeaa8f3f930c4781e72567e39e392d2a}} 
+float {\bfseries time4}
+\item 
+\mbox{\Hypertarget{classPlayer_a4877813d7a694c09ad32cf6aef31aafa}\label{classPlayer_a4877813d7a694c09ad32cf6aef31aafa}} 
+float {\bfseries move}
+\item 
+\mbox{\Hypertarget{classPlayer_a8092377fdcc462194dce820e867d904a}\label{classPlayer_a8092377fdcc462194dce820e867d904a}} 
+bool {\bfseries dead}
+\item 
+\mbox{\Hypertarget{classPlayer_ace6abae8d66534ad0a1fd6458f786a6e}\label{classPlayer_ace6abae8d66534ad0a1fd6458f786a6e}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{classPlayer_a1943a0542a2469051506b5c0f9044acc}\label{classPlayer_a1943a0542a2469051506b5c0f9044acc}} 
+float {\bfseries time\+Bomb}
+\item 
+\mbox{\Hypertarget{classPlayer_ae2d626d73944b1829a7fa87d32ca06ad}\label{classPlayer_ae2d626d73944b1829a7fa87d32ca06ad}} 
+float {\bfseries time\+Bomb\+Save}
+\item 
+\mbox{\Hypertarget{classPlayer_ab3e0373d93fdd68ad6717b471aa2111c}\label{classPlayer_ab3e0373d93fdd68ad6717b471aa2111c}} 
+int {\bfseries time\+Bomb\+Check}
+\item 
+\mbox{\Hypertarget{classPlayer_aa0923cc59276a705c137faaf8abee6b4}\label{classPlayer_aa0923cc59276a705c137faaf8abee6b4}} 
+std\+::vector$<$ Model\+Animation $\ast$ $>$ {\bfseries anims}
+\item 
+\mbox{\Hypertarget{classPlayer_ac12dd655544b51f120418a6f46b872b3}\label{classPlayer_ac12dd655544b51f120418a6f46b872b3}} 
+int {\bfseries anims\+\_\+count}
+\item 
+\mbox{\Hypertarget{classPlayer_ad6dd89288797d37671ba4c06589fc980}\label{classPlayer_ad6dd89288797d37671ba4c06589fc980}} 
+int {\bfseries anim\+Frame\+Counter}
+\item 
+\mbox{\Hypertarget{classPlayer_af63a8bd414725ce60ff0d13c6ef90e48}\label{classPlayer_af63a8bd414725ce60ff0d13c6ef90e48}} 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point {\bfseries last\+Run}
+\item 
+\mbox{\Hypertarget{classPlayer_a4af36afde8cbac38ebb3eab347de1e3d}\label{classPlayer_a4af36afde8cbac38ebb3eab347de1e3d}} 
+std\+::chrono\+::system\+\_\+clock {\bfseries system\+Clock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Player.\+hpp\item 
+src/game/Player.\+cpp\end{DoxyCompactItemize}

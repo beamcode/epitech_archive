@@ -1,0 +1,9 @@
+> > > > > tick: 1
+input(s):
+  in_a: 0
+  in_b: 0
+  in_c: 1
+output(s):
+  out: 0
+> ERROR : invalid command !
+> 

@@ -1,0 +1,436 @@
+\hypertarget{class__Model}{}\doxysection{\+\_\+\+Model Class Reference}
+\label{class__Model}\index{\_Model@{\_Model}}
+
+
+Class for all Model.  
+
+
+
+
+{\ttfamily \#include $<$Model.\+hpp$>$}
+
+Inheritance diagram for \+\_\+\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class__Model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__Model_a71baf47916a2563c1e6de47cece52754}{\+\_\+\+Model}} (const std\+::string \&obj, const std\+::string \&\mbox{\hyperlink{class__Model_ad46d2d90439d46e20a0c51ee68eee879}{texture}})
+\item 
+\mbox{\hyperlink{class__Model_a337623b7b1175b3e33ec1f01bb49ae90}{\+\_\+\+Model}} (const std\+::string \&obj, const std\+::string \&\mbox{\hyperlink{class__Model_ad46d2d90439d46e20a0c51ee68eee879}{texture}}, int \mbox{\hyperlink{class__Model_a33801bff0f3bd7f1d929c4702ffbab3d}{index}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\const char $\ast$ \mbox{\hyperlink{class__Model_a4407c72397b8d68de2db5dda27c313af}{str\+To\+Char}} (const T \&str)
+\item 
+void \mbox{\hyperlink{class__Model_ae35dfc80f519f3822aef42ae16981f81}{draw}} () const
+\item 
+void \mbox{\hyperlink{class__Model_abafc18b7d6907524ca8252c347cb44a7}{change\+\_\+texture}} (const std\+::string \&path)
+\item 
+std\+::string \mbox{\hyperlink{class__Model_aaecd74d033352615a260966704c2b849}{get\+Texture}} () const
+\item 
+void \mbox{\hyperlink{class__Model_a2cc021deec4f4b3b6fdf687bb4841565}{load\+\_\+texture}} (const std\+::string \&path, int i)
+\item 
+void \mbox{\hyperlink{class__Model_a09d3d63a2d2a954d69108c6cca13be4b}{set\+\_\+pos\+\_\+of}} (float v, const std\+::string \&val)
+\item 
+void \mbox{\hyperlink{class__Model_a4dd7bcd47a53dd06a091156d051dfc3f}{set\+\_\+axis\+\_\+of}} (float v, const std\+::string \&val)
+\item 
+void \mbox{\hyperlink{class__Model_a6420673df510cda877ad8f7850b5f77a}{set\+\_\+scale\+\_\+of}} (float v, const std\+::string \&val)
+\item 
+void \mbox{\hyperlink{class__Model_a07257f965970750564378ba78558b1a5}{set\+\_\+angle}} (float \+\_\+angle)
+\item 
+void \mbox{\hyperlink{class__Model_ac1fd04491717b16803a5d19066a586ad}{set\+\_\+pos}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class__Model_a0620d585e410bde1c5a93ee16950bbaf}{set\+\_\+axis}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class__Model_aa2627772c6cfe569c6bddf3dd981ffa7}{set\+\_\+scale}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class__Model_ac89b898b36a68897fda12e01c9faa75f}{set\+\_\+pos}} (Vector3 \+\_\+position)
+\item 
+void \mbox{\hyperlink{class__Model_a8e8db0664af67ceeb57e40f0ea30f898}{set\+\_\+scale}} (Vector3 \+\_\+scale)
+\item 
+void \mbox{\hyperlink{class__Model_a17031d0733bf8a822016ae26b3e97f91}{set\+\_\+axis}} (Vector3 \+\_\+axis)
+\item 
+Vector3 \mbox{\hyperlink{class__Model_a9f883f9f47be0725390b39200da4ac51}{get\+\_\+axis}} () const
+\item 
+Vector3 \mbox{\hyperlink{class__Model_a18b157e07a6ba086abcd998a6fed9f59}{get\+\_\+scale}} () const
+\item 
+Vector3 \mbox{\hyperlink{class__Model_aeca82e1e410a999097d27cd895471f23}{get\+\_\+pos}} () const
+\item 
+void \mbox{\hyperlink{class__Model_af4f2f84da1b95f94aaa63fd34da8efa8}{load\+Animations}} (const std\+::string \&path, int count)
+\item 
+void \mbox{\hyperlink{class__Model_a065f3fc5731a8768e60dbc3c096e45d7}{blender\+\_\+adjust}} ()
+\item 
+int \mbox{\hyperlink{class__Model_aaa61fa825a794e7e837f63c6f16f45c7}{get\+Index}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Model \mbox{\hyperlink{class__Model_ac203058f244636dbcb400bca75977502}{model}}
+\item 
+Texture2D \mbox{\hyperlink{class__Model_ad46d2d90439d46e20a0c51ee68eee879}{texture}}
+\item 
+Vector3 \mbox{\hyperlink{class__Model_aebc995b85df0cc77fe35d5f73c9cb105}{position}}
+\item 
+Vector3 \mbox{\hyperlink{class__Model_af24c791bcbd3f2f2bb406bdd3358a7f4}{scale}}
+\item 
+Vector3 \mbox{\hyperlink{class__Model_afa2e22beab2169058da3adac6b884692}{axis}}
+\item 
+float \mbox{\hyperlink{class__Model_a9a636d2125377dcaadd38bb6be640287}{angle}}
+\item 
+std\+::string \mbox{\hyperlink{class__Model_aaf0b59fe09e0432da137a8d0753aa9d8}{text\+Path}}
+\item 
+int \mbox{\hyperlink{class__Model_a33801bff0f3bd7f1d929c4702ffbab3d}{index}}
+\item 
+Texture2D \mbox{\hyperlink{class__Model_acf35f55469100a2bfbed58316e1d3205}{tmp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for all Model. 
+
+\begin{DoxyDate}{Date}
+June 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class__Model_a71baf47916a2563c1e6de47cece52754}\label{class__Model_a71baf47916a2563c1e6de47cece52754}} 
+\index{\_Model@{\_Model}!\_Model@{\_Model}}
+\index{\_Model@{\_Model}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{\_Model()}{\_Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \+\_\+\+Model\+::\+\_\+\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj,  }\item[{const std\+::string \&}]{texture }\end{DoxyParamCaption})}
+
+My first constructor 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ the path to the model \\
+\hline
+{\em texture} & -\/ the path to the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a337623b7b1175b3e33ec1f01bb49ae90}\label{class__Model_a337623b7b1175b3e33ec1f01bb49ae90}} 
+\index{\_Model@{\_Model}!\_Model@{\_Model}}
+\index{\_Model@{\_Model}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{\_Model()}{\_Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \+\_\+\+Model\+::\+\_\+\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj,  }\item[{const std\+::string \&}]{texture,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+My second constructor 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ the path to the model \\
+\hline
+{\em texture} & -\/ the path to the texture \\
+\hline
+{\em index} & -\/ the index of obj \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class__Model_a065f3fc5731a8768e60dbc3c096e45d7}\label{class__Model_a065f3fc5731a8768e60dbc3c096e45d7}} 
+\index{\_Model@{\_Model}!blender\_adjust@{blender\_adjust}}
+\index{blender\_adjust@{blender\_adjust}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{blender\_adjust()}{blender\_adjust()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::blender\+\_\+adjust (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads a aditional animation for the model 
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ path to the animation file \\
+\hline
+{\em count} & -\/ animation count value that must be parsed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_abafc18b7d6907524ca8252c347cb44a7}\label{class__Model_abafc18b7d6907524ca8252c347cb44a7}} 
+\index{\_Model@{\_Model}!change\_texture@{change\_texture}}
+\index{change\_texture@{change\_texture}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{change\_texture()}{change\_texture()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::change\+\_\+texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Change the texture path 
+\begin{DoxyParams}{Parameters}
+{\em path} & to the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_ae35dfc80f519f3822aef42ae16981f81}\label{class__Model_ae35dfc80f519f3822aef42ae16981f81}} 
+\index{\_Model@{\_Model}!draw@{draw}}
+\index{draw@{draw}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Draw the current obj \mbox{\Hypertarget{class__Model_a9f883f9f47be0725390b39200da4ac51}\label{class__Model_a9f883f9f47be0725390b39200da4ac51}} 
+\index{\_Model@{\_Model}!get\_axis@{get\_axis}}
+\index{get\_axis@{get\_axis}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{get\_axis()}{get\_axis()}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::get\+\_\+axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model axis 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+axis} & -\/ sets all 3 of the models axis values with a Vector3 as paramater \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_aeca82e1e410a999097d27cd895471f23}\label{class__Model_aeca82e1e410a999097d27cd895471f23}} 
+\index{\_Model@{\_Model}!get\_pos@{get\_pos}}
+\index{get\_pos@{get\_pos}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{get\_pos()}{get\_pos()}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::get\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets scale values \begin{DoxyReturn}{Returns}
+Vector3 of scale values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__Model_a18b157e07a6ba086abcd998a6fed9f59}\label{class__Model_a18b157e07a6ba086abcd998a6fed9f59}} 
+\index{\_Model@{\_Model}!get\_scale@{get\_scale}}
+\index{get\_scale@{get\_scale}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{get\_scale()}{get\_scale()}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::get\+\_\+scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets axis values \begin{DoxyReturn}{Returns}
+Vector3 of axis values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__Model_aaa61fa825a794e7e837f63c6f16f45c7}\label{class__Model_aaa61fa825a794e7e837f63c6f16f45c7}} 
+\index{\_Model@{\_Model}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int \+\_\+\+Model\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adjusts up axis from blender models to the up axis of the raylib (z -\/-\/$>$ y) Get Index \begin{DoxyReturn}{Returns}
+Index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__Model_aaecd74d033352615a260966704c2b849}\label{class__Model_aaecd74d033352615a260966704c2b849}} 
+\index{\_Model@{\_Model}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily std\+::string \+\_\+\+Model\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Change the texture path \begin{DoxyReturn}{Returns}
+the path of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__Model_a2cc021deec4f4b3b6fdf687bb4841565}\label{class__Model_a2cc021deec4f4b3b6fdf687bb4841565}} 
+\index{\_Model@{\_Model}!load\_texture@{load\_texture}}
+\index{load\_texture@{load\_texture}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{load\_texture()}{load\_texture()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::load\+\_\+texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+Apply texture 
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ the path of the texture \\
+\hline
+{\em i} & -\/ apply texture to correspoding meche \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_af4f2f84da1b95f94aaa63fd34da8efa8}\label{class__Model_af4f2f84da1b95f94aaa63fd34da8efa8}} 
+\index{\_Model@{\_Model}!loadAnimations@{loadAnimations}}
+\index{loadAnimations@{loadAnimations}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{loadAnimations()}{loadAnimations()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::load\+Animations (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+Gets axis values \begin{DoxyReturn}{Returns}
+Vector3 of position values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__Model_a07257f965970750564378ba78558b1a5}\label{class__Model_a07257f965970750564378ba78558b1a5}} 
+\index{\_Model@{\_Model}!set\_angle@{set\_angle}}
+\index{set\_angle@{set\_angle}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_angle()}{set\_angle()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+angle (\begin{DoxyParamCaption}\item[{float}]{\+\_\+angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Changes specific value in Vector3 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ sets the given value to the associated Vector3 position in 2nd param \\
+\hline
+{\em val} & -\/ character used to indicated which value must be changed in the Vector3 (x, y, z) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a0620d585e410bde1c5a93ee16950bbaf}\label{class__Model_a0620d585e410bde1c5a93ee16950bbaf}} 
+\index{\_Model@{\_Model}!set\_axis@{set\_axis}}
+\index{set\_axis@{set\_axis}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_axis()}{set\_axis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+axis (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model position 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ sets x position for the model \\
+\hline
+{\em y} & -\/ sets y position for the model \\
+\hline
+{\em z} & -\/ sets z position for the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a17031d0733bf8a822016ae26b3e97f91}\label{class__Model_a17031d0733bf8a822016ae26b3e97f91}} 
+\index{\_Model@{\_Model}!set\_axis@{set\_axis}}
+\index{set\_axis@{set\_axis}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_axis()}{set\_axis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+axis (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model scale 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+scale} & -\/ sets all 3 of the models scale values with a Vector3 as paramater \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a4dd7bcd47a53dd06a091156d051dfc3f}\label{class__Model_a4dd7bcd47a53dd06a091156d051dfc3f}} 
+\index{\_Model@{\_Model}!set\_axis\_of@{set\_axis\_of}}
+\index{set\_axis\_of@{set\_axis\_of}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_axis\_of()}{set\_axis\_of()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+axis\+\_\+of (\begin{DoxyParamCaption}\item[{float}]{v,  }\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})}
+
+Changes specific value in Vector3 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ sets the given value to the associated Vector3 position in 2nd param \\
+\hline
+{\em val} & -\/ character used to indicated which value must be changed in the Vector3 (x, y, z) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_ac1fd04491717b16803a5d19066a586ad}\label{class__Model_ac1fd04491717b16803a5d19066a586ad}} 
+\index{\_Model@{\_Model}!set\_pos@{set\_pos}}
+\index{set\_pos@{set\_pos}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_pos()}{set\_pos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model angle 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+angle} & -\/ sets model angle value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_ac89b898b36a68897fda12e01c9faa75f}\label{class__Model_ac89b898b36a68897fda12e01c9faa75f}} 
+\index{\_Model@{\_Model}!set\_pos@{set\_pos}}
+\index{set\_pos@{set\_pos}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_pos()}{set\_pos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model scale 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ sets x scale for the model \\
+\hline
+{\em y} & -\/ sets y scale for the model \\
+\hline
+{\em z} & -\/ sets z scale for the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a09d3d63a2d2a954d69108c6cca13be4b}\label{class__Model_a09d3d63a2d2a954d69108c6cca13be4b}} 
+\index{\_Model@{\_Model}!set\_pos\_of@{set\_pos\_of}}
+\index{set\_pos\_of@{set\_pos\_of}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_pos\_of()}{set\_pos\_of()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+pos\+\_\+of (\begin{DoxyParamCaption}\item[{float}]{v,  }\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})}
+
+Changes specific value in Vector3 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ sets the given value to the associated Vector3 position in 2nd param \\
+\hline
+{\em val} & -\/ character used to indicated which value must be changed in the Vector3 (x, y, z) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_aa2627772c6cfe569c6bddf3dd981ffa7}\label{class__Model_aa2627772c6cfe569c6bddf3dd981ffa7}} 
+\index{\_Model@{\_Model}!set\_scale@{set\_scale}}
+\index{set\_scale@{set\_scale}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_scale()}{set\_scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model axis 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ sets x axis for the model \\
+\hline
+{\em y} & -\/ sets y axis for the model \\
+\hline
+{\em z} & -\/ sets z axis for the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a8e8db0664af67ceeb57e40f0ea30f898}\label{class__Model_a8e8db0664af67ceeb57e40f0ea30f898}} 
+\index{\_Model@{\_Model}!set\_scale@{set\_scale}}
+\index{set\_scale@{set\_scale}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_scale()}{set\_scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+scale (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets model position 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & -\/ sets all 3 of the models positions with a Vector3 as paramater \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a6420673df510cda877ad8f7850b5f77a}\label{class__Model_a6420673df510cda877ad8f7850b5f77a}} 
+\index{\_Model@{\_Model}!set\_scale\_of@{set\_scale\_of}}
+\index{set\_scale\_of@{set\_scale\_of}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{set\_scale\_of()}{set\_scale\_of()}}
+{\footnotesize\ttfamily void \+\_\+\+Model\+::set\+\_\+scale\+\_\+of (\begin{DoxyParamCaption}\item[{float}]{v,  }\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})}
+
+Changes specific value in Vector3 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ sets the given value to the associated Vector3 position in 2nd param \\
+\hline
+{\em val} & -\/ character used to indicated which value must be changed in the Vector3 (x, y, z) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__Model_a4407c72397b8d68de2db5dda27c313af}\label{class__Model_a4407c72397b8d68de2db5dda27c313af}} 
+\index{\_Model@{\_Model}!strToChar@{strToChar}}
+\index{strToChar@{strToChar}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{strToChar()}{strToChar()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const char$\ast$ \+\_\+\+Model\+::str\+To\+Char (\begin{DoxyParamCaption}\item[{const T \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert string to char $\ast$ 
+\begin{DoxyParams}{Parameters}
+{\em const} & string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted char $\ast$ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class__Model_a9a636d2125377dcaadd38bb6be640287}\label{class__Model_a9a636d2125377dcaadd38bb6be640287}} 
+\index{\_Model@{\_Model}!angle@{angle}}
+\index{angle@{angle}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float \+\_\+\+Model\+::angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+Angle of the model 0 to 360 \mbox{\Hypertarget{class__Model_afa2e22beab2169058da3adac6b884692}\label{class__Model_afa2e22beab2169058da3adac6b884692}} 
+\index{\_Model@{\_Model}!axis@{axis}}
+\index{axis@{axis}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+Axis of the model on x, y, z \mbox{\Hypertarget{class__Model_a33801bff0f3bd7f1d929c4702ffbab3d}\label{class__Model_a33801bff0f3bd7f1d929c4702ffbab3d}} 
+\index{\_Model@{\_Model}!index@{index}}
+\index{index@{index}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int \+\_\+\+Model\+::index\hspace{0.3cm}{\ttfamily [protected]}}
+
+Class index value \mbox{\Hypertarget{class__Model_ac203058f244636dbcb400bca75977502}\label{class__Model_ac203058f244636dbcb400bca75977502}} 
+\index{\_Model@{\_Model}!model@{model}}
+\index{model@{model}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Model \+\_\+\+Model\+::model\hspace{0.3cm}{\ttfamily [protected]}}
+
+Model obj \mbox{\Hypertarget{class__Model_aebc995b85df0cc77fe35d5f73c9cb105}\label{class__Model_aebc995b85df0cc77fe35d5f73c9cb105}} 
+\index{\_Model@{\_Model}!position@{position}}
+\index{position@{position}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::position\hspace{0.3cm}{\ttfamily [protected]}}
+
+Position of the model on x, y, z \mbox{\Hypertarget{class__Model_af24c791bcbd3f2f2bb406bdd3358a7f4}\label{class__Model_af24c791bcbd3f2f2bb406bdd3358a7f4}} 
+\index{\_Model@{\_Model}!scale@{scale}}
+\index{scale@{scale}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily Vector3 \+\_\+\+Model\+::scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+Scale of the model on x, y, z \mbox{\Hypertarget{class__Model_aaf0b59fe09e0432da137a8d0753aa9d8}\label{class__Model_aaf0b59fe09e0432da137a8d0753aa9d8}} 
+\index{\_Model@{\_Model}!textPath@{textPath}}
+\index{textPath@{textPath}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{textPath}{textPath}}
+{\footnotesize\ttfamily std\+::string \+\_\+\+Model\+::text\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+Path of texture \mbox{\Hypertarget{class__Model_ad46d2d90439d46e20a0c51ee68eee879}\label{class__Model_ad46d2d90439d46e20a0c51ee68eee879}} 
+\index{\_Model@{\_Model}!texture@{texture}}
+\index{texture@{texture}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily Texture2D \+\_\+\+Model\+::texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+Texture of the model \mbox{\Hypertarget{class__Model_acf35f55469100a2bfbed58316e1d3205}\label{class__Model_acf35f55469100a2bfbed58316e1d3205}} 
+\index{\_Model@{\_Model}!tmp@{tmp}}
+\index{tmp@{tmp}!\_Model@{\_Model}}
+\doxysubsubsection{\texorpdfstring{tmp}{tmp}}
+{\footnotesize\ttfamily Texture2D \+\_\+\+Model\+::tmp\hspace{0.3cm}{\ttfamily [protected]}}
+
+Texture for tmp model 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Model.\+hpp\item 
+src/game/Model.\+cpp\end{DoxyCompactItemize}

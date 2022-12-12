@@ -1,0 +1,16 @@
+TITRE: Initiation au développement électronique avec Arduino
+
+
+Bonjour à tous,
+
+
+Vous êtes curieux et vous voulez découvrir le développement en électronique ?
+
+
+Pas de problèmes! Nous allons vous présenter une des plateforme les plus populaire en terme de développement en électronique : Arduino!
+
+
+Dans ce workshop vous allez apprendre les bases de l'Arduino et découvrir son utilisation.
+
+
+Objectif du workshop: découvrir les outils Arduino et créer son premier prototype électronique sur une carte Arduino.

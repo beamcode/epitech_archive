@@ -1,0 +1,4 @@
+resources/img/skin4.png
+resources/img/a44.png
+0
+1

@@ -1,0 +1,16 @@
+SOLUTIONS:
+
+1 -> Speak to old man
+2 -> Go east, speak to the man right above the waterfall, fight all the mob on the map and talk again with him
+3 -> Go east, speak to the soldier
+4 -> Go west, west and south, speak to the knight -> Click on the bush in the middle of the map and talk again with him
+5 -> Go east, speak to the man right above the car
+6 -> Go east, speak to the man right above the tank and fight all the mob in the map then speak again with him
+7 -> Go west, west and south, speak to the man in front of his house
+8 -> Go east, speak to the soldier, click on the big grave at the right of the map and talk again with him
+9 -> Go east, speak to the old man
+10 -> Go north, north, north, go down the ladder
+11 -> Kill the boss
+
+
+PS : If you're stuck in something, just keep pressing right click in a direction

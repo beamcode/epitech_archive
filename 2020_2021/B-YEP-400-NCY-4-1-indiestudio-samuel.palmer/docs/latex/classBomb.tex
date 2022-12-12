@@ -1,0 +1,99 @@
+\hypertarget{classBomb}{}\doxysection{Bomb Class Reference}
+\label{classBomb}\index{Bomb@{Bomb}}
+
+
+Class to deal with bomb obj.  
+
+
+
+
+{\ttfamily \#include $<$Bomb.\+hpp$>$}
+
+Inheritance diagram for Bomb\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBomb}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBomb_ab9d461ecbb899ac22de25f2eb468b374}{Bomb}} (const std\+::string \&obj, const std\+::string \&\mbox{\hyperlink{class__Model_ad46d2d90439d46e20a0c51ee68eee879}{texture}}, int \mbox{\hyperlink{class__Model_a33801bff0f3bd7f1d929c4702ffbab3d}{index}})
+\item 
+bool \mbox{\hyperlink{classBomb_a12c289199785784591b86f6a6030d163}{time\+To\+Destroy}} ()
+\item 
+bool \mbox{\hyperlink{classBomb_aacae4304c811cb4a79d392237ed4dab9}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classBomb_ac15009097141454f999dc36c67f87fe5}{play\+Sound}} ()
+\item 
+int \mbox{\hyperlink{classBomb_a8ec730699980db4953811d19be7a37ef}{get\+Index}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class to deal with bomb obj. 
+
+\begin{DoxyDate}{Date}
+June 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBomb_ab9d461ecbb899ac22de25f2eb468b374}\label{classBomb_ab9d461ecbb899ac22de25f2eb468b374}} 
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{Bomb()}{Bomb()}}
+{\footnotesize\ttfamily Bomb\+::\+Bomb (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj,  }\item[{const std\+::string \&}]{texture,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+My constructor. Initializes bomb. 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ the path to the model \\
+\hline
+{\em texture} & -\/ the path to the texture \\
+\hline
+{\em index} & -\/ the index of obj \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBomb_aacae4304c811cb4a79d392237ed4dab9}\label{classBomb_aacae4304c811cb4a79d392237ed4dab9}} 
+\index{Bomb@{Bomb}!destroy@{destroy}}
+\index{destroy@{destroy}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily bool Bomb\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+If the bomb is destroyed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_a8ec730699980db4953811d19be7a37ef}\label{classBomb_a8ec730699980db4953811d19be7a37ef}} 
+\index{Bomb@{Bomb}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int Bomb\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The class Index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_ac15009097141454f999dc36c67f87fe5}\label{classBomb_ac15009097141454f999dc36c67f87fe5}} 
+\index{Bomb@{Bomb}!playSound@{playSound}}
+\index{playSound@{playSound}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Bomb\+::play\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classEvent}{Event}} that plays the bomb destroyed sound \mbox{\Hypertarget{classBomb_a12c289199785784591b86f6a6030d163}\label{classBomb_a12c289199785784591b86f6a6030d163}} 
+\index{Bomb@{Bomb}!timeToDestroy@{timeToDestroy}}
+\index{timeToDestroy@{timeToDestroy}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{timeToDestroy()}{timeToDestroy()}}
+{\footnotesize\ttfamily bool Bomb\+::time\+To\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+If the bomb is to be destroyed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Bomb.\+hpp\item 
+src/game/Bomb.\+cpp\end{DoxyCompactItemize}

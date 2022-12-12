@@ -1,0 +1,141 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classGame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_aaeea046d5393e53c5aa3fc47e92947cc}\label{classGame_aaeea046d5393e53c5aa3fc47e92947cc}} 
+{\bfseries Game} (const std\+::string \&)
+\item 
+\mbox{\Hypertarget{classGame_a405c0bb8156590c93304f11cf1f08065}\label{classGame_a405c0bb8156590c93304f11cf1f08065}} 
+void {\bfseries init\+Player} ()
+\item 
+\mbox{\Hypertarget{classGame_aec1d4c0517ac6ef6c8276ff420b7ae47}\label{classGame_aec1d4c0517ac6ef6c8276ff420b7ae47}} 
+void {\bfseries init\+Scoreboard} ()
+\item 
+\mbox{\Hypertarget{classGame_a98750acf304667cd6cfc5bb6927b69fe}\label{classGame_a98750acf304667cd6cfc5bb6927b69fe}} 
+void {\bfseries generate\+Decor} ()
+\item 
+\mbox{\Hypertarget{classGame_a04b40d950b178411c834d85e2029b747}\label{classGame_a04b40d950b178411c834d85e2029b747}} 
+void {\bfseries generate\+Random\+Map} ()
+\item 
+\mbox{\Hypertarget{classGame_a49a62c94f591863bd4759513f7e53b08}\label{classGame_a49a62c94f591863bd4759513f7e53b08}} 
+void {\bfseries load\+Map} (std\+::string file)
+\item 
+\mbox{\Hypertarget{classGame_afaf5491a4db39923f9dcc872917432c1}\label{classGame_afaf5491a4db39923f9dcc872917432c1}} 
+void {\bfseries change\+Map} (const std\+::string \&\mbox{\hyperlink{classScene_a44b2d6bffa153dda02f026f8533ceb08}{name}})
+\item 
+void \mbox{\hyperlink{classGame_a494d6add4ce4ba8f450de9c4adb6e0dc}{draw\+Scene3d}} () const
+\item 
+void \mbox{\hyperlink{classGame_a7b6066a1bff3eccb19339ea48ad403e6}{update\+Scene}} ()
+\item 
+\mbox{\Hypertarget{classGame_a68d6bb28b36526d3e08604c77d637706}\label{classGame_a68d6bb28b36526d3e08604c77d637706}} 
+void {\bfseries generate\+Bomb} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPlayer}{Player}} $>$ player)
+\item 
+\mbox{\Hypertarget{classGame_a8c62626a18c6d35439eec737bcc978c3}\label{classGame_a8c62626a18c6d35439eec737bcc978c3}} 
+void {\bfseries generate\+Bonus} ()
+\item 
+\mbox{\Hypertarget{classGame_aad0dfc40589d1490cd07f07ae8ee950d}\label{classGame_aad0dfc40589d1490cd07f07ae8ee950d}} 
+void {\bfseries destroy\+Bomb} ()
+\item 
+\mbox{\Hypertarget{classGame_afa0ae1ecab2d6e64d8cd5817203fb25e}\label{classGame_afa0ae1ecab2d6e64d8cd5817203fb25e}} 
+void {\bfseries destroy\+Crate} (Vector3 pos, size\+\_\+t i, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ bomb)
+\item 
+\mbox{\Hypertarget{classGame_a29c340e85b2eb339f6e4716a5b045fe7}\label{classGame_a29c340e85b2eb339f6e4716a5b045fe7}} 
+void {\bfseries update\+Game\+Variable} ()
+\item 
+\mbox{\Hypertarget{classGame_aa227c390d55cd9e96ae1b56eb3abae70}\label{classGame_aa227c390d55cd9e96ae1b56eb3abae70}} 
+void {\bfseries check\+Win} ()
+\item 
+void \mbox{\hyperlink{classGame_ad0156add047e2a9abd2ba2c7db09a647}{refresh}} ()
+\item 
+\mbox{\Hypertarget{classGame_a53d8c2f6dde196e8195859ec50e9a7f2}\label{classGame_a53d8c2f6dde196e8195859ec50e9a7f2}} 
+void {\bfseries add\+\_\+obj} (std\+::string obj, std\+::string txt, Vector3 scale, Vector3 pos, int angle)
+\item 
+\mbox{\Hypertarget{classGame_a5cbe5888b95013409552d66b2c143e42}\label{classGame_a5cbe5888b95013409552d66b2c143e42}} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries get\+Grid} ()
+\item 
+\mbox{\Hypertarget{classGame_a8f67bee9f9ccb12a7605bab9cb625e18}\label{classGame_a8f67bee9f9ccb12a7605bab9cb625e18}} 
+int {\bfseries get\+Count} ()
+\item 
+\mbox{\Hypertarget{classGame_a8292245bb8f3bcc6b32c4484839ced07}\label{classGame_a8292245bb8f3bcc6b32c4484839ced07}} 
+int {\bfseries get\+Boom} ()
+\item 
+\mbox{\Hypertarget{classGame_a26d010197dfdd94327deb0d26984aeca}\label{classGame_a26d010197dfdd94327deb0d26984aeca}} 
+float {\bfseries get\+Bomb\+Time} ()
+\item 
+\mbox{\Hypertarget{classGame_a661cff6f1a704135c2cc2ad1e86aad3c}\label{classGame_a661cff6f1a704135c2cc2ad1e86aad3c}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ $>$ {\bfseries get\+Bomb\+List} ()
+\item 
+\mbox{\Hypertarget{classGame_ab46781f5812af8ae4d09ff93f8594f44}\label{classGame_ab46781f5812af8ae4d09ff93f8594f44}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCrate}{Crate}} $>$ $>$ {\bfseries get\+Crate\+List} ()
+\item 
+\mbox{\Hypertarget{classGame_ae8ed3018644271fb0c94809256264b7f}\label{classGame_ae8ed3018644271fb0c94809256264b7f}} 
+std\+::string {\bfseries get\+Map} ()
+\item 
+\mbox{\Hypertarget{classGame_a84fb5e822e0f1bdc03565e73d93ceb6a}\label{classGame_a84fb5e822e0f1bdc03565e73d93ceb6a}} 
+void {\bfseries set\+Grid} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \+\_\+grid)
+\item 
+\mbox{\Hypertarget{classGame_a64b26ca768a12729ca89e915799bdfcb}\label{classGame_a64b26ca768a12729ca89e915799bdfcb}} 
+void {\bfseries set\+Count} (int \+\_\+count)
+\item 
+\mbox{\Hypertarget{classGame_a68c9332dd01f18bfd38b3f62cdf2befb}\label{classGame_a68c9332dd01f18bfd38b3f62cdf2befb}} 
+void {\bfseries set\+Boom} (int \+\_\+boom)
+\item 
+\mbox{\Hypertarget{classGame_ab5f31f1e90f1df8b62ead1d1ee8c477f}\label{classGame_ab5f31f1e90f1df8b62ead1d1ee8c477f}} 
+void {\bfseries set\+Bomb\+Time} (float \+\_\+bomb\+Time)
+\item 
+\mbox{\Hypertarget{classGame_ad65b2dd1b1dc4a40279a858306986e3b}\label{classGame_ad65b2dd1b1dc4a40279a858306986e3b}} 
+void {\bfseries set\+Bomb\+List} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$$>$ \+\_\+bomb\+List)
+\item 
+\mbox{\Hypertarget{classGame_a30b478adad80f684b2ea567af4cc6c9a}\label{classGame_a30b478adad80f684b2ea567af4cc6c9a}} 
+void {\bfseries set\+Crate\+List} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCrate}{Crate}} $>$$>$ \+\_\+crate\+List)
+\item 
+\mbox{\Hypertarget{classGame_ae17013670619b8279c5fc2fea423e396}\label{classGame_ae17013670619b8279c5fc2fea423e396}} 
+void {\bfseries set\+Map} (const std\+::string \&\+\_\+map\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a494d6add4ce4ba8f450de9c4adb6e0dc}\label{classGame_a494d6add4ce4ba8f450de9c4adb6e0dc}} 
+\index{Game@{Game}!drawScene3d@{drawScene3d}}
+\index{drawScene3d@{drawScene3d}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawScene3d()}{drawScene3d()}}
+{\footnotesize\ttfamily void Game\+::draw\+Scene3d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the 3D scene 
+
+Reimplemented from \mbox{\hyperlink{classScene_ab5896f2af96c5a6d99951a5c969f027b}{Scene}}.
+
+\mbox{\Hypertarget{classGame_ad0156add047e2a9abd2ba2c7db09a647}\label{classGame_ad0156add047e2a9abd2ba2c7db09a647}} 
+\index{Game@{Game}!refresh@{refresh}}
+\index{refresh@{refresh}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void Game\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Refresh the scene 
+
+Implements \mbox{\hyperlink{classScene_a24e65988ebb777de3608f80b635aa5c0}{Scene}}.
+
+\mbox{\Hypertarget{classGame_a7b6066a1bff3eccb19339ea48ad403e6}\label{classGame_a7b6066a1bff3eccb19339ea48ad403e6}} 
+\index{Game@{Game}!updateScene@{updateScene}}
+\index{updateScene@{updateScene}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateScene()}{updateScene()}}
+{\footnotesize\ttfamily void Game\+::update\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update the actual scene 
+
+Implements \mbox{\hyperlink{classScene_afd8922d5a6854fc99f87e6ad1eb71d56}{Scene}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Game.\+hpp\item 
+src/game/Game.\+cpp\end{DoxyCompactItemize}

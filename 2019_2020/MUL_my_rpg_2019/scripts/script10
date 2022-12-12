@@ -1,0 +1,13 @@
+K fight/bouton_taille_150/button_attack2.png 640 140 1
+K fight/bouton_taille_150/button_attack1.png 640 140 2
+K fight/bouton_taille_150/button_flee2.png 1140 140 3
+K fight/bouton_taille_150/button_flee1.png 1140 140 4
+K fight/bouton_taille_150/button_punch2.png 250 840 5
+K fight/bouton_taille_150/button_punch1.png 250 840 6
+K fight/bouton_taille_150/firearms_button2.png 650 840 7
+K fight/bouton_taille_150/firearms_button1.png 650 840 8
+K fight/bouton_taille_150/melee_weapon2.png 1050 840 9
+K fight/bouton_taille_150/melee_weapon1.png 1050 840 10
+K fight/bouton_taille_150/special_attack2.png 1450 840 11
+K fight/bouton_taille_150/special_attack1.png 1450 840 12
+N 600 500 20 20 fight/hulk1.png 1

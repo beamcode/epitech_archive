@@ -1,0 +1,181 @@
+#!/bin/bash
+
+##
+## EPITECH PROJECT, 2019
+## automakefile.sh
+## File description:
+## automakefile
+##
+
+function check_args
+{
+    if ! [ -s $1 ]; then
+    echo -e "File does not exist or is empty."
+    exit 84; fi
+    if [ -z $1 ]; then
+    echo -e "You must specify a config file."
+    exit 84; fi
+    if ! grep -q ";" "$1"; then
+    echo "Config file is invalid."
+    exit 84; fi
+    if ! grep -q ".c;" "$1"; then
+    echo "No source files found."
+    exit 84; fi
+    if ! grep -q "PROJECT_DIR;" "$1"; then
+    echo "Missing PROJECT_DIR."
+    exit 84; fi
+    TEMP=$(grep "PROJECT_DIR;" "$1" | cut -d ';' -f2 )
+    if [ ! -d "$TEMP" ]; then
+    exit 84; fi
+    if [ "$TEMP" = "." ]; then
+    echo "PROJECT_DIR = "." not allowed."
+    exit 84; fi
+}
+
+function get_values
+{
+    IFS=$'\n'
+    for line in $(cat $1); do
+    res1=$(echo "$line" | cut -d ';' -f1)
+    res2=$(echo "$line" | cut -d ';' -f2)
+    if [ "$res1" = "EXEC" ]; then               EXEC=$res2
+    elif [ "$res1" = "PROJECT_DIR" ]; then      PROJECT_DIR=$res2
+    elif [ "$res1" = "CC" ]; then               CC=$res2
+    elif [ "$res1" = "SOURCES_DIR" ]; then      SOURCES_DIR=$res2
+    elif [ "$res1" = "CFLAGS" ]; then           CFLAGS=$res2
+    elif [ "$res1" = "HEADERS_DIR" ]; then      HEADERS_DIR=$res2
+    elif [ "$res1" = "LIBS_DIR" ]; then         LIBS_DIR=$res2
+    elif [ "$res1" = "LDFLAGS" ]; then          LDFLAGS=$res2
+    elif [ "$res1" = "ZIP" ]; then              ZIP=$res2
+    elif [ "$res1" = "ZIPFLAGS" ]; then         ZIPFLAGS=$res2
+    elif [ "$res1" = "UNZIP" ]; then            UNZIP=$res2
+    elif [ "$res1" = "UNZIPFLAGS" ]; then       UNZIPFLAGS=$res2
+    elif [ "$res1" = "BCK_DIR" ]; then          BCK_DIR=$res2
+    fi
+    done
+}
+
+function check_values
+{
+    if [ -z $EXEC ]; then
+    EXEC="a.out"; fi
+    if [ -z $CC ]; then
+    CC="gcc"; fi
+    if [ -z $SOURCES_DIR ]; then
+    SOURCES_DIR="."; fi
+    if [ -z $BCK_DIR ]; then
+    BCK_DIR="."; fi
+}
+
+function header
+{
+    echo -e "##" >> $PROJECT_DIR/Makefile
+    echo -e "## EPITECH PROJECT, 2019" >> $PROJECT_DIR/Makefile
+    echo -e "## Makefile" >> $PROJECT_DIR/Makefile
+    echo -e "## File description:" >> $PROJECT_DIR/Makefile
+    echo -e "## Makefile" >> $PROJECT_DIR/Makefile
+    echo -e "##\n" >> $PROJECT_DIR/Makefile
+}
+
+function sources
+{
+    printf "SRCS = " >> $PROJECT_DIR/Makefile
+    for line in $(cat $1); do
+    if echo $line | grep -q ".c;"; then
+        echo -e " \\" >> $PROJECT_DIR/Makefile
+        printf "\t\t$SOURCES_DIR/$line " | cut -d ';' -f1 | tr -d $'\n' >> $PROJECT_DIR/Makefile
+    fi
+    done
+    echo -e "" >> $PROJECT_DIR/Makefile
+}
+
+function libs_heads
+{
+    if [ -z $LIBS_DIR ]; then
+        echo -e "LIBS_DIR =" >> $PROJECT_DIR/Makefile
+    else 
+        echo -e "LIBS_DIR = -L $LIBS_DIR" >> $PROJECT_DIR/Makefile;
+    fi
+
+    if [ -z $HEADERS_DIR ]; then
+        echo -e "HEADERS_DIR =" >> $PROJECT_DIR/Makefile
+    else
+        echo -e "HEADERS_DIR = -I $HEADERS_DIR" >> $PROJECT_DIR/Makefile
+    fi
+}
+
+function variables
+{
+    header $*
+    echo -e "EXEC = $EXEC" >> $PROJECT_DIR/Makefile
+    echo -e "CC = $CC" >> $PROJECT_DIR/Makefile
+    sources $*
+    echo -e "OBJS = \$(SRCS:.c=.o)" >> $PROJECT_DIR/Makefile
+    echo -e "RM = rm -f\n" >> $PROJECT_DIR/Makefile
+
+    echo -e "SOURCES_DIR = $SOURCES_DIR" >> $PROJECT_DIR/Makefile
+    echo -e "PROJECT_DIR = $PROJECT_DIR" >> $PROJECT_DIR/Makefile
+    libs_heads $*
+    echo -e "BCK_DIR = $BCK_DIR\n" >> $PROJECT_DIR/Makefile
+
+    echo -e "LDFLAGS = $LDFLAGS \$(LIBS_DIR)" >> $PROJECT_DIR/Makefile
+    echo -e "CFLAGS = $CFLAGS \$(HEADERS_DIR)\n" >> $PROJECT_DIR/Makefile
+
+    echo -e "ZIP = $ZIP" >> $PROJECT_DIR/Makefile
+    echo -e "UNZIP = $UNZIP" >> $PROJECT_DIR/Makefile
+    echo -e "ZIPFLAGS = $ZIPFLAGS" >> $PROJECT_DIR/Makefile
+    echo -e "UNZIPFLAGS = $UNZIPFLAGS" >> $PROJECT_DIR/Makefile
+    echo -e "VERSION = \$\$(cat \$(BCK_DIR)/.version)\n" >> $PROJECT_DIR/Makefile
+}
+
+function comp
+{
+    echo -e "\nall: \$(EXEC)" >> $PROJECT_DIR/Makefile
+    echo -e "\$(EXEC): \$(OBJS)" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t\$(CC) \$(OBJS) -o \$(EXEC) \$(LDFLAGS)" >> $PROJECT_DIR/Makefile
+
+    echo -e "clean:" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t\$(RM) \$(OBJS)" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name '*~' -delete" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name '#*#' -delete" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name '*.o' -delete" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name '*.gcda' -delete" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name '*.gcno' -delete" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@find . -type f -name 'vgcore.*' -delete" >> $PROJECT_DIR/Makefile
+
+    echo -e "fclean: clean" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t\$(RM) \$(EXEC)" >> $PROJECT_DIR/Makefile
+
+    echo -e "re: fclean all" >> $PROJECT_DIR/Makefile
+}
+
+function backups
+{
+    echo -e "archive:" >> $PROJECT_DIR/Makefile
+    echo -e "\t\tmkdir -p \$(BCK_DIR)" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@echo \$\$(( \$(VERSION) + 1)) > ./\$(BCK_DIR)/.version" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@\$(ZIP) \$(ZIPFLAGS) \$(BCK_DIR)/\$(EXEC)_\$(VERSION).\$(ZIP) \$(SRCS)" >> $PROJECT_DIR/Makefile
+
+    echo -e "revert:" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t\$(UNZIP) \$(UNZIPFLAGS) \$(BCK_DIR)/\$(EXEC)_\$(VERSION).\$(ZIP)"  >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@echo \$\$(( \$(VERSION) - 1)) > ./\$(BCK_DIR)/.version" >> $PROJECT_DIR/Makefile
+
+    echo -e "num:" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@echo \$(VERSION)" >> $PROJECT_DIR/Makefile
+
+    echo -e "delete:" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@rm -rf \$(BCK_DIR)/\$(EXEC)_\$(VERSION).\$(ZIP)" >> $PROJECT_DIR/Makefile
+    echo -e "\t\t@echo \$\$(( \$(VERSION) - 1)) > ./\$(BCK_DIR)/.version" >> $PROJECT_DIR/Makefile
+}
+
+check_args $*
+get_values $*
+check_values $*
+
+variables $*
+comp $*
+backups $*
+
+echo -e ".PHONY: all clean fclean re delete archive num revert" >> $PROJECT_DIR/Makefile
+echo -n 0 > $PROJECT_DIR/$BCK_DIR/.version
+exit 0;

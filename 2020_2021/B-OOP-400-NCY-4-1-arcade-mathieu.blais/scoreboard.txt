@@ -1,0 +1,14 @@
+nibbler 110
+solarfox 150
+solarfox 430
+GECInibbler 30
+nibbler 0
+nibbler 20
+nibbler 10
+nibbler 0
+nibbler 60
+solarfox 340
+solarfox 280
+solarfox 320
+solarfox 220
+nibbler 10

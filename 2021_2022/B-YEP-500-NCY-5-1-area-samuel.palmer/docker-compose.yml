@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  server:
+    build: ./backend
+    ports:
+      - "8080:3001"
+    restart: always
+
+  client_web:
+    build: ./web
+    ports:
+      - "8081:3000"
+    depends_on:
+      - server
+      - client_mobile
+    volumes:
+      - base:/vol
+    restart: always
+
+  client_mobile:
+    build: ./app
+    depends_on:
+      - server
+    volumes:
+      - base:/vol
+    restart: always
+
+volumes:
+  base:

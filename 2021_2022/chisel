@@ -1,0 +1,52 @@
+------
+Room1: basic
+
+flag1: EPI{H4sK377_C4n_B3_r3VsH3LL_t00}
+flag2: EPI{tVrNs_0uT_P1tH0n_1S_n0_B3tT3r}
+
+https://musyokaian.medium.com/haskhell-tryhackme-walkthrough-2865c34768f7
+
+------
+Room2: basic
+
+flag1: EPI{L3_tR0nC_3sT_3N_r34LiT3_uN_pS3uD0_TR0nc}
+flag2: EPI{L4_T1g3_Fl0R1f3Re_d3S_M0nt4Gn3s_Dr3sse3}
+
+https://tonyrahmos.medium.com/year-of-the-rabbit-tryhackme-writeup-53d5dd410de1
+https://fmash16.github.io/content/writeups/tryhackme/thm-Year-of-the-Rabbit.html
+
+------
+Room3: basic
+
+flag1: EPI{Th1s_1s_N0t_4_T3kP3d4go_Y0u_H4ck3r}
+flag2: EPI{I_Pr3F3R_mY_P3d4g0_W1tH_RC3}
+flag3: EPI{Y0u_F1n1sH3D_Th3_cH4lL_0r_D1d_Y0u}
+flag4: EPI{esc4l4tions_on_esc4l4tions_on_esc4l4tions_1t_N3v3R_St0p}
+
+https://ratiros01.medium.com/tryhackme-dogcat-83d83d13c5c8
+https://fmash16.github.io/content/writeups/tryhackme/thm-DogCat.html
+
+------
+Room4: basic
+
+flag1: EPI{4Ch13V3m3nT_g0Ld3N_g0d}
+flag2: EPI{4Ch13V3m3nT_Pl4T1Num_g0d}
+flag3: EPI{4Ch13V3m3nT_Th3_R4aL_Pl4T1Num_g0d}
+
+https://www.aldeid.com/wiki/TryHackMe-The-Server-From-Hell
+https://arz101.medium.com/tryhackme-server-from-hell-61481cc08718
+
+------
+Room5: medium
+
+flag1: EPI{4_G1rL_h4S_N0_n4M3}
+flag2: EPI{St1Ck_tH3M_W1th_tH3_P01nTY_3nD}
+flag3: EPI{V4L4r_M0rgUL1s_V4l4R_D0h43R1s}
+flag4: EPI{Wh4T_D0_w3_s4Y_T0_tH3_g0D_0F_D34Th}
+
+(Rsync modif) -avh --no-perms --no-group --no-owner
+
+https://www.infosecarticles.com/tryhackme-vulnnet-internal-walkthrough/
+
+
+

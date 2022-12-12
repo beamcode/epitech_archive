@@ -1,0 +1,396 @@
+\hypertarget{classScene}{}\doxysection{Scene Class Reference}
+\label{classScene}\index{Scene@{Scene}}
+
+
+Class that manage scene.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.731707cm]{classScene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScene_a7284a98535d8d56adc03f44109504de6}{Scene}} (const std\+::string \&)
+\item 
+\mbox{\hyperlink{classScene_a8a3ca48a73b0d713697b71264b387d9f}{Scene}} (const std\+::string \&, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSave}{Save}} $>$)
+\item 
+virtual void \mbox{\hyperlink{classScene_ab5896f2af96c5a6d99951a5c969f027b}{draw\+Scene3d}} () const
+\item 
+virtual void \mbox{\hyperlink{classScene_ace23f4b46cbd0856a17c0889f3860e65}{draw\+Scene2d}} () const
+\item 
+virtual void \mbox{\hyperlink{classScene_afd8922d5a6854fc99f87e6ad1eb71d56}{update\+Scene}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classScene_a24e65988ebb777de3608f80b635aa5c0}{refresh}} ()=0
+\item 
+void \mbox{\hyperlink{classScene_a46802726804c4cc39b233b1d6de46627}{add\+Music}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classScene_a102ea73d54b9d1a08da9c2d9046339be}{add\+Skybox}} (float width, float height, float lenght, const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classScene_a5bc9282e02b7d933a84b7a25c6ab884b}{add\+Map}} ()
+\item 
+void \mbox{\hyperlink{classScene_abde9cf091cf97572e2f55e2fc8dbbe8c}{add\+Model}} (const std\+::string \&a, const std\+::string \&b)
+\item 
+void \mbox{\hyperlink{classScene_a8f3257229a7730ac5abd53c84d89a246}{add\+Sprite}} (const std\+::string \&path, int x, int y, Color color, int index)
+\item 
+void \mbox{\hyperlink{classScene_ad1c5b4e79274f64659c470a21ead542b}{add\+Text}} (const std\+::string \&font\+Path, const std\+::string \&txt, float x, float y, int font\+Size)
+\item 
+std\+::string \mbox{\hyperlink{classScene_ad38687f5ba8e021eae3be69d65eb8793}{get\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classScene_a2d7d20359fbe2152ba8853df80780965}{change\+Scene}} () const
+\item 
+bool \mbox{\hyperlink{classScene_a05537165c025e9f94032a87cb935c81b}{is\+Closed}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class__Music}{\+\_\+\+Music}} $>$ $>$ \mbox{\hyperlink{classScene_a7c98df788efa2e79353c3d6a5fe1873d}{music}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class__Skybox}{\+\_\+\+Skybox}} $>$ $>$ \mbox{\hyperlink{classScene_ac722a1ee5e154f9896cfb05ba31905ea}{skybox}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSprite}{Sprite}} $>$ $>$ \mbox{\hyperlink{classScene_abdedabc5f19fe1a15ed31caeda1b2bea}{sprite}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPlayer}{Player}} $>$ $>$ \mbox{\hyperlink{classScene_a69c4efa568e1c6d2605c07f9516664ee}{player\+List}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classScoreboard}{Scoreboard}} $>$ $>$ \mbox{\hyperlink{classScene_a68c7f896b7e9011ff529511a5bf94bef}{sc}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class__Model}{\+\_\+\+Model}} $>$ $>$ \mbox{\hyperlink{classScene_acfed2b5e47d73dd3566c9f27f9977668}{model}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classText}{Text}} $>$ $>$ \mbox{\hyperlink{classScene_a4303921d985ae23a75ce202cd7d827b3}{text}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class__Map}{\+\_\+\+Map}} $>$ \mbox{\hyperlink{classScene_a6f026abd8ecddbd6124bc4a9e9aea6ae}{map}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEvent}{Event}} $>$ \mbox{\hyperlink{classScene_ae043d7e6a0aee90c072178e1eb214345}{event}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSave}{Save}} $>$ \mbox{\hyperlink{classScene_a4223eff5d310cb0c4657bcca2bc5b993}{save}}
+\item 
+std\+::string \mbox{\hyperlink{classScene_a44b2d6bffa153dda02f026f8533ceb08}{name}}
+\item 
+std\+::string \mbox{\hyperlink{classScene_a69ade663c79e73056b259262fde5e093}{newscene}}
+\item 
+bool \mbox{\hyperlink{classScene_ad4f221040b4573052a2855228e93f0d8}{close}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manage scene. 
+
+\begin{DoxyDate}{Date}
+June 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScene_a7284a98535d8d56adc03f44109504de6}\label{classScene_a7284a98535d8d56adc03f44109504de6}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+name }\end{DoxyParamCaption})}
+
+My constructor. Initializes scene. 
+\begin{DoxyParams}{Parameters}
+{\em string} & -\/ name of the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a8a3ca48a73b0d713697b71264b387d9f}\label{classScene_a8a3ca48a73b0d713697b71264b387d9f}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSave}{Save}} $>$}]{\+\_\+save }\end{DoxyParamCaption})}
+
+My second constructor. Initializes scene. 
+\begin{DoxyParams}{Parameters}
+{\em string} & -\/ name of the scene \\
+\hline
+{\em shared\+\_\+ptr} & -\/ ptr to previous save scene \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScene_a5bc9282e02b7d933a84b7a25c6ab884b}\label{classScene_a5bc9282e02b7d933a84b7a25c6ab884b}} 
+\index{Scene@{Scene}!addMap@{addMap}}
+\index{addMap@{addMap}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addMap()}{addMap()}}
+{\footnotesize\ttfamily void Scene\+::add\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a Map to the scene 
+
+Implements \mbox{\hyperlink{classIScene_a2b0ecbc20c3e2b2f1bef8519dea050f0}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_abde9cf091cf97572e2f55e2fc8dbbe8c}\label{classScene_abde9cf091cf97572e2f55e2fc8dbbe8c}} 
+\index{Scene@{Scene}!addModel@{addModel}}
+\index{addModel@{addModel}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addModel()}{addModel()}}
+{\footnotesize\ttfamily void Scene\+::add\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{a,  }\item[{const std\+::string \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a Model to the scene 
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ is the obj \\
+\hline
+{\em b} & -\/ is the texture \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIScene_a14f238cc4edff145a111d1edbd97405c}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_a46802726804c4cc39b233b1d6de46627}\label{classScene_a46802726804c4cc39b233b1d6de46627}} 
+\index{Scene@{Scene}!addMusic@{addMusic}}
+\index{addMusic@{addMusic}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addMusic()}{addMusic()}}
+{\footnotesize\ttfamily void Scene\+::add\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a new music to the scene 
+
+Implements \mbox{\hyperlink{classIScene_afbdd88d8f95f86c7934e75020491dc89}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_a102ea73d54b9d1a08da9c2d9046339be}\label{classScene_a102ea73d54b9d1a08da9c2d9046339be}} 
+\index{Scene@{Scene}!addSkybox@{addSkybox}}
+\index{addSkybox@{addSkybox}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addSkybox()}{addSkybox()}}
+{\footnotesize\ttfamily void Scene\+::add\+Skybox (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{lenght,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a skybox to the scene 
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ the path of the ressource file \\
+\hline
+{\em width} & -\/ width of the skybox ~\newline
+ \\
+\hline
+{\em height} & -\/ height of the skybox \\
+\hline
+{\em lenght} & -\/ lenght of the skybox \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIScene_a5e067be0ba77f5d299ebe84c00940740}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_a8f3257229a7730ac5abd53c84d89a246}\label{classScene_a8f3257229a7730ac5abd53c84d89a246}} 
+\index{Scene@{Scene}!addSprite@{addSprite}}
+\index{addSprite@{addSprite}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addSprite()}{addSprite()}}
+{\footnotesize\ttfamily void Scene\+::add\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{Color}]{color,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+add sprite to the scene 
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ the path of the ressource file \\
+\hline
+{\em x} & -\/ x coordinate of the point \\
+\hline
+{\em y} & -\/ y coordinate of the point \\
+\hline
+{\em color} & -\/ color color of the sprite \\
+\hline
+{\em index} & -\/ index of the sprite \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIScene_a969b9f85a868248c7b0ac19791237dea}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_ad1c5b4e79274f64659c470a21ead542b}\label{classScene_ad1c5b4e79274f64659c470a21ead542b}} 
+\index{Scene@{Scene}!addText@{addText}}
+\index{addText@{addText}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addText()}{addText()}}
+{\footnotesize\ttfamily void Scene\+::add\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Path,  }\item[{const std\+::string \&}]{txt,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{font\+Size }\end{DoxyParamCaption})}
+
+Add text to the scene 
+\begin{DoxyParams}{Parameters}
+{\em font\+Path} & -\/ the path of the ressource file \\
+\hline
+{\em txt} & -\/ the path of the txt ressource file \\
+\hline
+{\em x} & -\/ x coordinate of the point \\
+\hline
+{\em y} & -\/ y coordinate of the point \\
+\hline
+{\em font\+Size} & -\/ size of the font \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScene_a2d7d20359fbe2152ba8853df80780965}\label{classScene_a2d7d20359fbe2152ba8853df80780965}} 
+\index{Scene@{Scene}!changeScene@{changeScene}}
+\index{changeScene@{changeScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{changeScene()}{changeScene()}}
+{\footnotesize\ttfamily std\+::string Scene\+::change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Change scene \begin{DoxyReturn}{Returns}
+the scene dto be display 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIScene_a59da02b4a2011b25dae4cbf58d6db339}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_ace23f4b46cbd0856a17c0889f3860e65}\label{classScene_ace23f4b46cbd0856a17c0889f3860e65}} 
+\index{Scene@{Scene}!drawScene2d@{drawScene2d}}
+\index{drawScene2d@{drawScene2d}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{drawScene2d()}{drawScene2d()}}
+{\footnotesize\ttfamily void Scene\+::draw\+Scene2d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the 2D scene 
+
+Implements \mbox{\hyperlink{classIScene_a81e6acf47bffe77755213a83753e3b16}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_ab5896f2af96c5a6d99951a5c969f027b}\label{classScene_ab5896f2af96c5a6d99951a5c969f027b}} 
+\index{Scene@{Scene}!drawScene3d@{drawScene3d}}
+\index{drawScene3d@{drawScene3d}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{drawScene3d()}{drawScene3d()}}
+{\footnotesize\ttfamily void Scene\+::draw\+Scene3d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the 3D scene 
+
+Implements \mbox{\hyperlink{classIScene_aa8fcdfec6ffbf423ee45134ee9164c27}{I\+Scene}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classGame_a494d6add4ce4ba8f450de9c4adb6e0dc}{Game}}.
+
+\mbox{\Hypertarget{classScene_ad38687f5ba8e021eae3be69d65eb8793}\label{classScene_ad38687f5ba8e021eae3be69d65eb8793}} 
+\index{Scene@{Scene}!getName@{getName}}
+\index{getName@{getName}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Scene\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Name getter \begin{DoxyReturn}{Returns}
+name of the actual scene 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIScene_a643fc851596bdb01b2e7b3f32f1a9762}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_a05537165c025e9f94032a87cb935c81b}\label{classScene_a05537165c025e9f94032a87cb935c81b}} 
+\index{Scene@{Scene}!isClosed@{isClosed}}
+\index{isClosed@{isClosed}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{isClosed()}{isClosed()}}
+{\footnotesize\ttfamily bool Scene\+::is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+check if the scene is closed \begin{DoxyReturn}{Returns}
+true if the game should be close closed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIScene_aee709f9f6d9a3f72dc78da19c0ab0866}{I\+Scene}}.
+
+\mbox{\Hypertarget{classScene_a24e65988ebb777de3608f80b635aa5c0}\label{classScene_a24e65988ebb777de3608f80b635aa5c0}} 
+\index{Scene@{Scene}!refresh@{refresh}}
+\index{refresh@{refresh}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily virtual void Scene\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Refresh the scene 
+
+Implements \mbox{\hyperlink{classIScene_a0fa3e8f3b640ab3533c149e3d81ec856}{I\+Scene}}.
+
+
+
+Implemented in \mbox{\hyperlink{classGame_ad0156add047e2a9abd2ba2c7db09a647}{Game}}, \mbox{\hyperlink{classCharactersChoice_a495ff8d771f92b3b038ab490c0d4d659}{Characters\+Choice}}, \mbox{\hyperlink{classMenu_a208bbf99c10a96230f12e0735f4230fb}{Menu}}, \mbox{\hyperlink{classEnd_a5832878e2ee184e9baa8e402d2e1aec6}{End}}, and \mbox{\hyperlink{classOptions_aa0f7bf9c3d280a79c08b6e4d860ba4dd}{Options}}.
+
+\mbox{\Hypertarget{classScene_afd8922d5a6854fc99f87e6ad1eb71d56}\label{classScene_afd8922d5a6854fc99f87e6ad1eb71d56}} 
+\index{Scene@{Scene}!updateScene@{updateScene}}
+\index{updateScene@{updateScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{updateScene()}{updateScene()}}
+{\footnotesize\ttfamily virtual void Scene\+::update\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Update the actual scene 
+
+Implements \mbox{\hyperlink{classIScene_a4c78b9365632633bdb2fa45fe41bdc03}{I\+Scene}}.
+
+
+
+Implemented in \mbox{\hyperlink{classGame_a7b6066a1bff3eccb19339ea48ad403e6}{Game}}, \mbox{\hyperlink{classMenu_a8956ed5f6566e4671cd0644c3701036f}{Menu}}, \mbox{\hyperlink{classCharactersChoice_a28bb6a0707d95efeb2bc8db469baca6f}{Characters\+Choice}}, \mbox{\hyperlink{classEnd_a6fb96c5f046ee6251dba4c4a6768d4d5}{End}}, and \mbox{\hyperlink{classOptions_aaa4898fb45f6a228d32cf30993245031}{Options}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classScene_ad4f221040b4573052a2855228e93f0d8}\label{classScene_ad4f221040b4573052a2855228e93f0d8}} 
+\index{Scene@{Scene}!close@{close}}
+\index{close@{close}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{close}{close}}
+{\footnotesize\ttfamily bool Scene\+::close\hspace{0.3cm}{\ttfamily [protected]}}
+
+bool to check if the scene is close \mbox{\Hypertarget{classScene_ae043d7e6a0aee90c072178e1eb214345}\label{classScene_ae043d7e6a0aee90c072178e1eb214345}} 
+\index{Scene@{Scene}!event@{event}}
+\index{event@{event}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classEvent}{Event}}$>$ Scene\+::event\hspace{0.3cm}{\ttfamily [protected]}}
+
+ptr for actual event \mbox{\Hypertarget{classScene_a6f026abd8ecddbd6124bc4a9e9aea6ae}\label{classScene_a6f026abd8ecddbd6124bc4a9e9aea6ae}} 
+\index{Scene@{Scene}!map@{map}}
+\index{map@{map}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class__Map}{\+\_\+\+Map}}$>$ Scene\+::map\hspace{0.3cm}{\ttfamily [protected]}}
+
+ptr for actual map \mbox{\Hypertarget{classScene_acfed2b5e47d73dd3566c9f27f9977668}\label{classScene_acfed2b5e47d73dd3566c9f27f9977668}} 
+\index{Scene@{Scene}!model@{model}}
+\index{model@{model}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class__Model}{\+\_\+\+Model}}$>$ $>$ Scene\+::model\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all model \mbox{\Hypertarget{classScene_a7c98df788efa2e79353c3d6a5fe1873d}\label{classScene_a7c98df788efa2e79353c3d6a5fe1873d}} 
+\index{Scene@{Scene}!music@{music}}
+\index{music@{music}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class__Music}{\+\_\+\+Music}}$>$ $>$ Scene\+::music\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all music \mbox{\Hypertarget{classScene_a44b2d6bffa153dda02f026f8533ceb08}\label{classScene_a44b2d6bffa153dda02f026f8533ceb08}} 
+\index{Scene@{Scene}!name@{name}}
+\index{name@{name}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Scene\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+name for the obj \mbox{\Hypertarget{classScene_a69ade663c79e73056b259262fde5e093}\label{classScene_a69ade663c79e73056b259262fde5e093}} 
+\index{Scene@{Scene}!newscene@{newscene}}
+\index{newscene@{newscene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{newscene}{newscene}}
+{\footnotesize\ttfamily std\+::string Scene\+::newscene\hspace{0.3cm}{\ttfamily [protected]}}
+
+name for the new name \mbox{\Hypertarget{classScene_a69c4efa568e1c6d2605c07f9516664ee}\label{classScene_a69c4efa568e1c6d2605c07f9516664ee}} 
+\index{Scene@{Scene}!playerList@{playerList}}
+\index{playerList@{playerList}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{playerList}{playerList}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classPlayer}{Player}}$>$ $>$ Scene\+::player\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all player \mbox{\Hypertarget{classScene_a4223eff5d310cb0c4657bcca2bc5b993}\label{classScene_a4223eff5d310cb0c4657bcca2bc5b993}} 
+\index{Scene@{Scene}!save@{save}}
+\index{save@{save}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{save}{save}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classSave}{Save}}$>$ Scene\+::save\hspace{0.3cm}{\ttfamily [protected]}}
+
+ptr for actual saving config \mbox{\Hypertarget{classScene_a68c7f896b7e9011ff529511a5bf94bef}\label{classScene_a68c7f896b7e9011ff529511a5bf94bef}} 
+\index{Scene@{Scene}!sc@{sc}}
+\index{sc@{sc}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{sc}{sc}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classScoreboard}{Scoreboard}}$>$ $>$ Scene\+::sc\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all scoreboard \mbox{\Hypertarget{classScene_ac722a1ee5e154f9896cfb05ba31905ea}\label{classScene_ac722a1ee5e154f9896cfb05ba31905ea}} 
+\index{Scene@{Scene}!skybox@{skybox}}
+\index{skybox@{skybox}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{skybox}{skybox}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class__Skybox}{\+\_\+\+Skybox}}$>$ $>$ Scene\+::skybox\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all skybox \mbox{\Hypertarget{classScene_abdedabc5f19fe1a15ed31caeda1b2bea}\label{classScene_abdedabc5f19fe1a15ed31caeda1b2bea}} 
+\index{Scene@{Scene}!sprite@{sprite}}
+\index{sprite@{sprite}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classSprite}{Sprite}}$>$ $>$ Scene\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all sprite \mbox{\Hypertarget{classScene_a4303921d985ae23a75ce202cd7d827b3}\label{classScene_a4303921d985ae23a75ce202cd7d827b3}} 
+\index{Scene@{Scene}!text@{text}}
+\index{text@{text}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classText}{Text}}$>$ $>$ Scene\+::text\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector for all text 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Scene.\+hpp\item 
+src/game/Scene.\+cpp\end{DoxyCompactItemize}
